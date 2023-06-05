@@ -1,0 +1,37 @@
+using System.Collections.Generic;
+
+namespace ObjLoader
+{
+    class Point3D
+    {
+        public float _x { set; get; }
+        public float _y { set; get; }
+        public float _z { set; get; }
+
+        public List<Point3D> adjacentN { set; get; }
+
+        public float xn { set; get; }
+        public float yn { set; get; }
+        public float zn { set; get; }
+
+        public Point3D()
+        {
+            _x = 0;
+            _y = 0;
+            _z = 0;
+
+            xn = 0;
+            yn = 0;
+            zn = 0;
+
+            adjacentN = new List<Point3D>();
+        }
+
+        public Point3D(float x, float y, float z) : this()
+        {
+            _x = x;
+            _y = y;
+            _z = z;
+        }
+    }
+}
