@@ -1,0 +1,19 @@
+using System.Collections.Generic;
+
+namespace ObjLoader
+{
+    class Poly
+    {
+        public List<Point3D> verts { get; set; }
+
+        public Poly()
+        {
+            verts = new List<Point3D>();
+        }
+
+        public Poly(List<Point3D> verts)
+        {
+            this.verts = verts;
+        }
+    }
+}
