@@ -2,7 +2,7 @@
 
 Simple obj file loader.
 
-## Usage
+## Usage example
 ```
 ObjLoader ol;
 
